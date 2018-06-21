@@ -9,6 +9,14 @@ function preload(){
 	font = loadFont('AvenirNextLTPro-Regular.otf');
 }
 
+function windowResized(){
+	//console.log("resized")
+	resizeCanvas(
+		window.innerWidth,
+		window.innerHeight	
+	);
+}
+
 function setup(){
 	createCanvas(
 		window.innerWidth,
